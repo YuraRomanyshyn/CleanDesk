@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Desk Policy</title>
+  <meta name="description" content="Interaktywna lekcja Clean Desk Policy: kliknij elementy na biurku i sprawdź, co wolno zostawić, a czego nie.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Bezpieczeństwo informacji</p>
+      <h1>Clean Desk Policy</h1>
+      <p class="lead">Kliknij numerek na zdjęciu, żeby dowiedzieć się, czy dany element może zostać na biurku, gdy odchodzisz od stanowiska.</p>
+
+      <div class="legend" aria-label="Legenda">
+        <span class="legend-item legend-item--allowed"><span class="dot" aria-hidden="true">✓</span>Dozwolone</span>
+        <span class="legend-item legend-item--forbidden"><span class="dot" aria-hidden="true">✕</span>Zakazane</span>
+        <span class="progress" id="progress" aria-live="polite">Odkryto 0 z 10</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <figure class="desk">
+      <div class="desk-stage" id="deskStage">
+        <img src="img/biurko.jpg" width="1670" height="939"
+             alt="Biurko robocze z ponumerowanymi elementami: karteczki z hasłem i notatką, laptop, roślina, wydruki, pendrive, lista pracowników, identyfikator, telefon i kubek.">
+        <!-- Znaczniki generowane są w script.js -->
+      </div>
+      <figcaption>Wskazówka: możesz też wybrać element z listy poniżej.</figcaption>
+    </figure>
+
+    <section class="items" aria-labelledby="itemsTitle">
+      <h2 id="itemsTitle">Wszystkie elementy</h2>
+      <ul class="item-list" id="itemList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">Zanim odejdziesz od biurka: zablokuj komputer, schowaj dokumenty, zabierz identyfikator.</div>
+  </footer>
+
+  <!-- Okno pop-up -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="modal-close" type="button" data-close aria-label="Zamknij">✕</button>
+      <div class="modal-head">
+        <span class="modal-num" id="modalNum">1</span>
+        <div>
+          <span class="badge" id="modalBadge">Zakazane</span>
+          <h3 id="modalTitle">Nazwa</h3>
+        </div>
+      </div>
+      <p class="modal-text" id="modalText"></p>
+      <div class="modal-nav">
+        <button type="button" class="nav-btn" id="prevBtn" aria-label="Poprzedni element">← Poprzedni</button>
+        <button type="button" class="nav-btn" id="nextBtn" aria-label="Następny element">Następny →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
