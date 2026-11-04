@@ -1,6 +1,4 @@
-/* ============================================================
-   KOLORY MARKI
-   ============================================================ */
+/* colors */
 :root {
   --anchor:       #2D3A40;
   --calm-light:   #F3F6F7;
@@ -31,14 +29,12 @@ body {
   line-height: 1.55;
 }
 
-/* blokada przewijania przy otwartym pop-upie */
+/* scroll lock */
 body.is-locked { position: fixed; left: 0; right: 0; overflow: hidden; }
 
 .wrap { width: min(1200px, 100% - 32px); margin-inline: auto; }
 
-/* ============================================================
-   NAGŁÓWEK
-   ============================================================ */
+/* title */
 .hero {
   background: var(--ocean-depth);
   color: var(--calm-light);
@@ -79,9 +75,7 @@ body.is-locked { position: fixed; left: 0; right: 0; overflow: hidden; }
 .progress { padding: 6px 14px; margin-left: auto; color: var(--dynamic-aqua); }
 .progress.is-done { background: var(--dynamic-aqua); color: var(--ocean-depth); }
 
-/* ============================================================
-   ZDJĘCIE + ZNACZNIKI
-   ============================================================ */
+/* img & signs */
 main { padding: 32px 0 48px; }
 
 .desk { margin: 0; }
@@ -97,7 +91,7 @@ main { padding: 32px 0 48px; }
 
 .marker {
   position: absolute;
-  /* wielkość względem zdjęcia – zawsze przykrywa oryginalne numerki */
+  /* size vs nums */
   width: max(3.6%, 30px);
   aspect-ratio: 1;
   transform: translate(-50%, -50%);
@@ -113,7 +107,7 @@ main { padding: 32px 0 48px; }
 .marker--allowed   { background: var(--allowed); }
 .marker--forbidden { background: var(--forbidden); }
 
-/* pulsujący pierścień – zachęca do kliknięcia */
+/* pulsing circle */
 .marker::after {
   content: "";
   position: absolute; inset: -3px;
@@ -135,9 +129,7 @@ main { padding: 32px 0 48px; }
   100% { transform: scale(1.7); opacity: 0; }
 }
 
-/* ============================================================
-   LISTA ELEMENTÓW
-   ============================================================ */
+/* items list */
 .items h2 { margin: 40px 0 14px; font-size: 1.35rem; color: var(--ocean-depth); }
 .item-list {
   list-style: none; margin: 0; padding: 0;
@@ -171,17 +163,13 @@ main { padding: 32px 0 48px; }
 .item-tag  { font-size: .82rem; color: var(--c); font-weight: 600; }
 .item.is-visited .item-name::after { content: " ✔"; color: var(--dynamic-aqua); font-size: .8em; }
 
-/* ============================================================
-   STOPKA
-   ============================================================ */
+/* footer */
 .footer {
   background: var(--anchor); color: var(--driftwood);
   padding: 22px 0; font-size: .92rem; text-align: center;
 }
 
-/* ============================================================
-   POP-UP
-   ============================================================ */
+/* pop-up */
 .modal {
   position: fixed; inset: 0; z-index: 100;
   display: grid; place-items: center;
@@ -191,7 +179,7 @@ main { padding: 32px 0 48px; }
 
 .modal-backdrop {
   position: absolute; inset: 0;
-  background: rgba(45, 58, 64, .55);   /* Anchor, przyciemnienie tła */
+  background: rgba(45, 58, 64, .55);
   backdrop-filter: blur(2px);
   opacity: 0; transition: opacity .2s ease;
 }
@@ -247,9 +235,7 @@ main { padding: 32px 0 48px; }
 }
 .nav-btn:hover, .nav-btn:focus-visible { color: var(--ocean-depth); outline: 2px solid var(--arctic-cyan); }
 
-/* ============================================================
-   TELEFONY
-   ============================================================ */
+/* call */
 @media (max-width: 600px) {
   .hero { padding: 30px 0 26px; }
   .progress { margin-left: 0; }
