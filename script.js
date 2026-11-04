@@ -1,9 +1,4 @@
-/* ============================================================
-   TREŚCI – tutaj edytujesz teksty pop-upów.
-   x / y = pozycja znacznika na zdjęciu w procentach
-   (0 = lewa/górna krawędź, 100 = prawa/dolna).
-   allowed: true = Dozwolone, false = Zakazane
-   ============================================================ */
+/* items list*/
 const ITEMS = [
   { id: 1,  name: "Hasło",              allowed: false, x: 66.83, y: 6.60,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
@@ -27,9 +22,6 @@ const ITEMS = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum." }
 ];
 
-/* ============================================================
-   LOGIKA – zwykle nie trzeba tu nic zmieniać.
-   ============================================================ */
 (function () {
   const stage    = document.getElementById("deskStage");
   const list     = document.getElementById("itemList");
@@ -44,13 +36,13 @@ const ITEMS = [
   const progress = document.getElementById("progress");
 
   const visited = new Set();
-  let current = -1;        // indeks otwartego elementu
-  let lastFocus = null;    // gdzie wrócić fokusem po zamknięciu
+  let current = -1;        
+  let lastFocus = null;    
   let savedScroll = 0;
 
   const label = (it) => it.allowed ? "Dozwolone" : "Zakazane";
 
-  // --- Znaczniki na zdjęciu + lista pod zdjęciem ---
+  
   ITEMS.forEach((it, i) => {
     const kind = it.allowed ? "allowed" : "forbidden";
 
@@ -77,7 +69,7 @@ const ITEMS = [
     list.appendChild(li);
   });
 
-  // --- Blokada przewijania (działa też na iOS) ---
+  
   function lockScroll() {
     savedScroll = window.scrollY;
     const sbw = window.innerWidth - document.documentElement.clientWidth;
@@ -92,7 +84,7 @@ const ITEMS = [
     window.scrollTo(0, savedScroll);
   }
 
-  // --- Wypełnienie i otwarcie pop-upu ---
+  
   function render(i) {
     const it = ITEMS[i];
     current = i;
@@ -139,7 +131,7 @@ const ITEMS = [
     else if (e.key === "ArrowRight") step(1);
     else if (e.key === "ArrowLeft") step(-1);
     else if (e.key === "Tab") {
-      // fokus zostaje wewnątrz okna
+      
       const f = card.querySelectorAll("button");
       const first = f[0], last = f[f.length - 1];
       if (e.shiftKey && (document.activeElement === first || document.activeElement === card)) { e.preventDefault(); last.focus(); }
