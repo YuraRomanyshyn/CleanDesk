@@ -8,7 +8,7 @@ const ITEMS = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse." },
   { id: 4,  name: "Notatka",            allowed: false, x: 62.10, y: 43.34,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa." },
-  { id: 5,  name: "Drukowane materiały", allowed: false, x: 94.13, y: 24.81,
+  { id: 5,  name: "Wydruki",            allowed: false, x: 94.13, y: 24.81,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit." },
   { id: 6,  name: "Pendrive",           allowed: false, x: 89.76, y: 54.53,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet." },
