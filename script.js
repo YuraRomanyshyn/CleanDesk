@@ -1,25 +1,25 @@
 /* items list*/
 const ITEMS = [
   { id: 1,  name: "Hasło",              allowed: false, x: 66.83, y: 6.60,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    text: "Gratulacje, właśnie zamieniłeś wieloskładnikowe hasło na jednoskładnikowe. Teraz wystarczy umieć czytać." },
   { id: 2,  name: "Laptop",             allowed: true,  x: 42.40, y: 57.19,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." },
+    text: "Laptop może zostać na biurku. Warunek jest jeden: ekran powinien wiedzieć o Twojej nieobecności szybciej niż reszta biura. Na szczęście zablokowanie go zajmuje mniej niż sekundę: wystarczy nacisnąć Windows + L." },
   { id: 3,  name: "Roślina",            allowed: true,  x: 15.63, y: 41.21,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse." },
+    text: "Ten jedyny współpracownik, który nigdy nie wyśle danych do niewłaściwej osoby. Co najwyżej potrzebuje trochę wody i okazjonalnie bardziej słonecznego miejsca." },
   { id: 4,  name: "Notatka",            allowed: false, x: 62.10, y: 43.34,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa." },
+    text: "Sama karteczka nie jest problemem. Problem zaczyna się wtedy, gdy nasze „przypominajki” zdradzają informacje o problemach, projektach, systemach lub incydentach, którymi zajmuje się firma." },
   { id: 5,  name: "Wydruki",            allowed: false, x: 94.13, y: 24.81,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit." },
+    text: "Wysłanie dokumentu do drukarki to dopiero połowa zadania. Druga połowa to odebrać go, zanim zrobi to ktoś inny." },
   { id: 6,  name: "Pendrive",           allowed: false, x: 89.76, y: 54.53,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet." },
+    text: "Pozostawiony pendrive wygląda niepozornie. Problem w tym, że kilka centymetrów plastiku i metali potrafi pomieścić więcej danych niż całe biurko papierów." },
   { id: 7,  name: "Wrażliwe dane",      allowed: false, x: 19.04, y: 62.09,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit." },
+    text: "Jeżeli po odejściu od biurka ktoś może nadrobić zaległości w Twojej pracy, po prostu czytając pozostawione dokumenty, to znak, że czas posprzątać." },
   { id: 8,  name: "Identyfikator",      allowed: false, x: 29.40, y: 85.20,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus." },
+    text: "Twoja karta dostępu działa dokładnie tak samo niezależnie od tego, kto ją trzyma w ręku. Dlatego nie powinna czekać na biurku na kolejnego użytkownika." },
   { id: 9,  name: "Komórka",            allowed: false, x: 50.60, y: 79.87,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque." },
+    text: "Telefon służbowy jest mały, lekki i bardzo łatwo go zabrać. Dlatego najlepiej czuje się w Twojej kieszeni, a nie samotnie na biurku." },
   { id: 10, name: "Kubek",              allowed: true,  x: 79.58, y: 63.90,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Temporibus autem quibusdam et aut officiis debitis aut rerum." }
+    text: "To nie kubek stanowi zagrożenie dla bezpieczeństwa informacji. Największym zagrożeniem jest znajdująca się w nim kawa, która od trzech godzin czeka na Twój powrót." }
 ];
 
 (function () {
